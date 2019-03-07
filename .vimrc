@@ -1,0 +1,1 @@
+set undodir=~/.vim/undodir
