@@ -73,7 +73,7 @@ xterm*|rxvt*)
 esac
 
 # Environment variables
-export PATH="/home/toussaint/anaconda3/bin:$PATH"
+export PATH="/home/toussaint/miniconda3/bin:$PATH"
 export PATH="/usr/local/cuda-9.0/bin:$PATH"
 export LD_LIBRARY_PATH="/usr/local/cuda/lib64:$LD_LIBRARY_PATH"
 export IPGIT=''
