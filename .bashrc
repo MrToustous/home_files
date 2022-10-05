@@ -17,10 +17,13 @@ alias clear_swap='sudo swapoff -a && sudo swapon -a'
 alias stop_aws_vm="aws ec2 stop-instances --instance-ids $AWS_VM_ID"
 alias start_aws_vm="aws ec2 start-instances --instance-ids $AWS_VM_ID"
 alias ll="ls -alF"
-alias setbrightness="xrandr --output eDP --brightness $1"
 
 alias mount_hdmi_left='xrandr --output HDMI-1-1 --auto --left-of eDP-1-1'
 alias mount_hdmi_right='xrandr --output HDMI-1-1 --auto --right-of eDP-1-1'
+alias mount_hdmi_above='xrandr --output HDMI-1-1 --auto --above eDP-1-1'
+alias setbrightness="xrandr --output eDP --brightness $1"
+
+alias mock_mongo='docker run -p 27017:27017 mongo'
 
 # Check screens
 # xrandr
