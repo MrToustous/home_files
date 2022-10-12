@@ -24,6 +24,11 @@ alias mount_hdmi_above='xrandr --output HDMI-1-1 --auto --above eDP-1-1'
 alias setbrightness="xrandr --output eDP --brightness $1"
 
 alias mock_mongo='docker run -p 27017:27017 mongo'
+alias maj='sudo apt upgrade; sudo apt update; sudo apt dist_upgrade'
 
 # Check screens
 # xrandr
+
+# Check file sizes
+# du -h
+# ncdu
