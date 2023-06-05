@@ -7,3 +7,9 @@ sudo apt install zsh --assume-yes
 # cp .vimrc ~/
 mkdir ~/.config/i3/ && cp .config/i3/config ~/.config/i3/config
 
+# Change default shell to zsh
+chsh -s /bin/zsh $USERNAME
+
+# The clone oh my zsh
+git clone https://github.com/ohmyzsh/ohmyzsh.git
+mv ohmyzsh ~/.oh-my-zsh
