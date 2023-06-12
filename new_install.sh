@@ -13,3 +13,7 @@ chsh -s /bin/zsh $USERNAME
 # The clone oh my zsh
 git clone https://github.com/ohmyzsh/ohmyzsh.git
 mv ohmyzsh ~/.oh-my-zsh
+
+# Install fuzzy search
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install
