@@ -5,11 +5,24 @@ sudo apt install git --assume-yes
 sudo apt install zsh --assume-yes
 
 # Symlink config files
+rm -f ~/.bashrc
 ln -sf $(pwd)/.bashrc ~/.bashrc
+
+rm -f ~/.vimrc
 ln -sf $(pwd)/.vimrc ~/.vimrc
+
+rm -f ~/.zshrc
 ln -sf $(pwd)/.zshrc ~/.zshrc
-mkdir -p ~/.config/i3 && ln -sf $(pwd)/.config/i3/config ~/.config/i3/config
-mkdir -p ~/.cursor && ln -sf $(pwd)/.cursor/mcp.json ~/.cursor/mcp.json
+
+mkdir -p ~/.config/i3
+rm -f ~/.config/i3/config
+ln -sf $(pwd)/.config/i3/config ~/.config/i3/config
+
+mkdir -p ~/.cursor
+rm -f ~/.cursor/mcp.json
+ln -sf $(pwd)/.cursor/mcp.json ~/.cursor/mcp.json
+
+rm -f ~/.cursor/argv.json
 ln -sf $(pwd)/.cursor/argv.json ~/.cursor/argv.json
 
 # Change default shell to zsh

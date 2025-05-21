@@ -1,0 +1,17 @@
+{
+  "mcpServers": {
+    "browser-tools": {
+      "command": "npx",
+      "args": [
+        "@agentdeskai/browser-tools-mcp@1.2.0"
+      ]
+    },
+    "Framelink Figma MCP": {
+      "command": "npx",
+      "args": ["-y", "figma-developer-mcp", "--figma-api-key=", "--stdio"],
+      "env": {
+        "FIGMA_API_KEY": ""
+      }
+    }
+  }
+} 
