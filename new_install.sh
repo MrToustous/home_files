@@ -2,7 +2,7 @@ sudo apt install vim --assume-yes
 sudo apt install htop --assume-yes
 sudo apt install i3 --assume-yes
 sudo apt install git --assume-yes
-sudo apt install zsh --assume-yes
+sudo apt install zsh zsh-autosuggestions zsh-highlighting --assume-yes
 
 # Symlink config files
 rm -f ~/.bashrc
