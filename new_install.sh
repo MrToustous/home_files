@@ -2,7 +2,7 @@ sudo apt install vim --assume-yes
 sudo apt install htop --assume-yes
 sudo apt install i3 --assume-yes
 sudo apt install git --assume-yes
-sudo apt install zsh zsh-autosuggestions zsh-highlighting --assume-yes
+sudo apt install zsh --assume-yes
 
 # Symlink config files
 rm -f ~/.bashrc
@@ -31,6 +31,8 @@ chsh -s /bin/zsh $USERNAME
 # The clone oh my zsh
 git clone https://github.com/ohmyzsh/ohmyzsh.git
 mv ohmyzsh ~/.oh-my-zsh
+
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 
 # Install fuzzy search
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
